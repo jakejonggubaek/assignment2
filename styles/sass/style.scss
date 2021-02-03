@@ -1,0 +1,16 @@
+@import 'setup';
+
+body {
+    background-color: $primaryColor;
+    color: lightseagreen;
+
+   
+}
+
+h1 {
+    @include fontSize(55px);
+
+    @include tabletMQ {
+        @include fontSize(45px);
+    }
+}
