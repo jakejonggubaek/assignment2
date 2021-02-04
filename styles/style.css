@@ -244,23 +244,58 @@ template {
   overflow: hidden;
 }
 
-h1 {
-  color: lightseagreen;
-}
-
 body {
-  background-color: blue;
-  color: lightseagreen;
+  background-color: #EAFEFC;
+  font-size: 125%;
 }
 
-h1 {
-  font-size: 55px;
-  color: teal;
+header {
+  background: url(../../assets/contact-header.jpg);
+  width: 100%;
+  height: 500px;
+  color: #FFFFFF;
 }
 
-@media screen and (max-width: 1080px) {
-  h1 {
-    font-size: 45px;
-    color: teal;
-  }
+header h1 {
+  font-family: 'IM Fell English', serif;
+  font-size: 3.95rem;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-container li {
+  padding: 20px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside i {
+  color: #0D457F;
 }

@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>GET IN TOUCH</h1>
-        </div>
-    </header>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <ul class="nav-container">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>GET IN TOUCH</h1>
+    </div>
+  </header>
+  <div class="flex-container">
     <aside>
-        <div>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-whatsapp"></i>
-        </div>
-        <p>info@email.com</p>
-        <br>
-        <p>123-456-7890</p>
-        <p>123 Queen Street West, Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M5V2D5</p>
+      <div>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <p>info@email.com</p>
+      <br>
+      <p>123-456-7890</p>
+      <p>123 Queen Street West, Unit 10</p>
+      <p>Toronto, Ontario</p>
+      <p>M5V2D5</p>
     </aside>
     <main>
-        <form action="">
-            <form action="">
-                <label for="user-name"></label>
-                <input type="text" name="user-name" id="user-name" placeholder="Name">
-                <label for="email-addr"></label>
-                <input type="email" name="email-addr" id="email-addr" placeholder="Email address">
-                <label for="message"></label>
-                <input type="text" name="message" id="message" placeholder="Message">
-                <button>Submit</button>
-            </form>
-        </form>
+      <form class="input-container" action="">
+        <div>
+          <label for="user-name"></label>
+          <input type="text" name="user-name" id="user-name" placeholder="Name">
+
+          <label for="email-addr"></label>
+          <input type="email" name="email-addr" id="email-addr" placeholder="Email address">
+        </div>
+        <div>
+          <label for="message"></label>
+          <input type="text" name="message" id="message" placeholder="Message">
+        </div>
+        <button>Submit</button>
+
+      </form>
+
     </main>
-    <footer>
-        <p>Copyright &copy; 2021 HackerYou</p>
-    </footer>
+  </div>
+  <footer>
+    <p>Copyright &copy; 2021 HackerYou</p>
+  </footer>
 </body>
+
 </html>
