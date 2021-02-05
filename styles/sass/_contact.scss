@@ -1,4 +1,7 @@
+
+
 body {
+    font-family: 'Roboto', sans-serif;
   background-color: #EAFEFC;
   font-size: 125%;
 }
@@ -25,7 +28,6 @@ header h1 {
 .nav-container {
   display: flex;
   list-style: none;
-  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
@@ -54,9 +56,89 @@ header h1 {
 .input-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+aside {
+  padding: 5%;
+  font-size: 1rem;
 }
 
 aside i {
+  color: #0D457F;
+  margin: 0 1rem 1rem 0;
+}
+
+aside p {
+  margin: 0.3rem 0;
+  font-weight: 100;
+}
+
+main {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  font-size: 1rem;
+  background-color: #0D457F;
+  width: 60vw;
+  height: 60vh;
+  top: -140px;
+  left: 100px;
+  z-index: 2;
+}
+
+.shadow {
+  position: absolute;
+  background-color: #FDD908;
+  width: 59vw;
+  height: 58vh;
+  top: -115px;
+  left: 122px;
+  z-index: 1;
+}
+
+form input {
+  background-color: #0D457F;
+  border: none;
+  color: #FFFFFF;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+.name-email {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name-email input {
+  width: 40%;
+  padding: 20px 20px 20px 20px;
+  margin-right: 25px;
+  border-bottom: 2px solid #FDD908;
+}
+
+.message {
+  width: calc(80% + 80px);
+  border: 2px solid #FDD908;
+  height: 50%;
+  padding: 20px;
+}
+
+button {
+  font-family: 'IM Fell English', serif;
+  width: calc(80% + 80px);
+  background: #FDD908;
+  font-size: 1.12rem;
+  line-height: 2.08rem;
   color: #0D457F;
 }
 
