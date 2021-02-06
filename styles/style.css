@@ -248,6 +248,18 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #EAFEFC;
   font-size: 125%;
+  font-weight: 300;
+}
+
+header h1 {
+  font-family: 'IM Fell English', serif;
+  font-size: 3.95rem;
+  text-shadow: 2px 2px #000000;
+}
+
+h2 {
+  font-family: 'IM Fell English', serif;
+  font-size: 2.25rem;
 }
 
 .contact-header {
@@ -391,7 +403,7 @@ button {
   position: absolute;
   width: 50%;
   right: 0;
-  bottom: 20%;
+  bottom: -12%;
 }
 
 .index-section {
@@ -405,7 +417,143 @@ button {
   padding-top: 200px;
 }
 
-.first-wrapper > div > div > div {
+.first-wrapper h2 {
+  margin: 0;
+  color: #0d457f;
+}
+
+.first-wrapper div {
+  padding-bottom: 30px;
+}
+
+.icon-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon-container {
+  margin-right: 10px;
+}
+
+.icon-container i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FDD908;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: #0d457f;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.second-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #0d457f;
+  padding: 5% 0;
+}
+
+.second-wrapper h2,
+.second-wrapper p {
+  color: #FFFFFF;
+}
+
+.second-wrapper p {
+  text-align: initial;
+}
+
+.second-wrapper button {
+  margin-top: 15px;
+  width: 140px;
+}
+
+.second-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.second-wrapper img {
+  width: 80%;
+}
+
+.new-location-container {
+  text-align: right;
+}
+
+.new-location-container .wrapper {
+  padding-right: 15%;
+}
+
+.new-location-container img {
+  position: relative;
+  -webkit-box-shadow: 10px 10px #FDD908;
+          box-shadow: 10px 10px #FDD908;
+  left: 0;
+  top: -15%;
+}
+
+.our-program-container .wrapper {
+  padding-left: 15%;
+}
+
+.our-program-container img {
+  position: relative;
+  -webkit-box-shadow: -10px 10px #FDD908;
+          box-shadow: -10px 10px #FDD908;
+  right: 0;
+  top: 15%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.third-section {
+  text-align: center;
+}
+
+.third-section h2 {
+  color: #0d457f;
+}
+
+.third-section > div {
+  padding: 100px 100px;
+}
+
+.third-section button {
+  width: 180px;
+}
+
+.third-section img {
+  width: 100%;
+}
+
+.fourth-section .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,11 +562,43 @@ button {
           align-items: center;
 }
 
-.first-wrapper > div > div > div i {
-  background-color: #FDD908;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+.fourth-section h2 {
+  color: #0d457f;
+}
+
+.fourth-section .wrapper img {
+  width: 25%;
+  height: 25%;
+  -webkit-box-shadow: -10px 10px #FDD908;
+          box-shadow: -10px 10px #FDD908;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fourth-section .wrapper div {
+  padding: 100px;
+}
+
+.fourth-section button {
+  width: 180px;
+}
+
+.gallery {
+  background-color: #0d457f;
+  padding: 50px 0;
+}
+
+.gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery .wrapper img {
+  padding: 10px;
+  width: calc(100% / 3 - 20px);
 }
 
 header {
@@ -430,12 +610,6 @@ header {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-}
-
-header h1 {
-  font-family: 'IM Fell English', serif;
-  font-size: 3.95rem;
-  text-shadow: 2px 2px #000000;
 }
 
 .nav-container {
@@ -474,7 +648,6 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: 100px;
 }
 
 footer p {

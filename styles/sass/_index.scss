@@ -6,14 +6,13 @@
 .index-header h1 {
   padding-top: 220px;
   color: #FDD908;
-  
 }
 
 .index-header img {
   position: absolute;
   width: 50%;
   right: 0;
-  bottom: 20%;
+  bottom: -12%;
 }
 
 .index-section {
@@ -25,14 +24,154 @@
   padding-top: 200px;
 }
 
-.first-wrapper > div > div > div {
-  display: flex;
-  align-items: center;
+.first-wrapper h2 {
+  margin: 0;
+  color: #0d457f
 }
 
-.first-wrapper > div > div > div i {
+.first-wrapper div {
+  padding-bottom: 30px;
+}
+
+.icon-content-container {
+  display: flex;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container {
+  margin-right: 10px;
+}
+
+.icon-container i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #FDD908;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
+  color: #0d457f;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.second-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: #0d457f;
+  padding: 5% 0;
+}
+
+.second-wrapper h2,
+.second-wrapper p {
+  color: #FFFFFF;
+}
+
+.second-wrapper p {
+  text-align: initial;
+}
+
+.second-wrapper button {
+  margin-top: 15px;
+  width: 140px;
+}
+
+.second-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.second-wrapper img {
+  width: 80%;
+}
+
+.new-location-container {
+  text-align: right;
+}
+
+.new-location-container .wrapper {
+  padding-right: 15%;
+}
+
+.new-location-container img {
+  position: relative;
+  box-shadow: 10px 10px #FDD908;
+  left: 0;
+  top: -15%;
+}
+
+.our-program-container .wrapper {
+  padding-left: 15%;
+}
+
+.our-program-container img {
+  position: relative;
+  box-shadow: -10px 10px #FDD908;
+  right: 0;
+  top: 15%;
+  align-self: flex-end;
+}
+
+.third-section {
+  text-align: center;
+}
+
+.third-section h2 {
+  color: #0d457f;
+}
+
+.third-section > div {
+  padding: 100px 100px;
+}
+
+.third-section button {
+  width: 180px;
+}
+
+.third-section img {
+  width: 100%;
+}
+
+.fourth-section .wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.fourth-section h2 {
+  color: #0d457f;
+}
+
+.fourth-section .wrapper img {
+  width: 25%;
+  height: 25%;
+  box-shadow: -10px 10px #FDD908;
+  object-fit: cover;
+}
+
+.fourth-section .wrapper div {
+  padding: 100px;
+}
+
+.fourth-section button {
+  width: 180px;
+}
+
+.gallery {
+  background-color: #0d457f;
+  padding: 50px 0;
+}
+
+.gallery .wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery .wrapper img {
+  padding: 10px;
+  width: calc(100% / 3 - 20px);
 }
