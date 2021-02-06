@@ -1,51 +1,11 @@
-
-
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #EAFEFC;
   font-size: 125%;
 }
-
-header {
+.contact-header {
   background: url(../assets/contact-header.jpg);
   background-size: cover;
-  width: 100%;
-  height: 500px;
-  color: #FFFFFF;  
-}
-
-.wrapper {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-header h1 {
-  font-family: 'IM Fell English', serif;
-  font-size: 3.95rem;
-}
-
-.nav-container {
-  display: flex;
-  list-style: none;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 50px 0;
-}
-
-.nav-container li {
-  margin: 5px;
-}
-.nav-container a {
-  padding: 10px 0 5px 0;
-  margin: 10px;
-  text-decoration: none; 
-  color: #FFFFFF; 
-}
-
-.nav-container a:hover {
-  border-bottom: 2px solid #FDD908;
 }
 
 .flex-container {
@@ -76,7 +36,7 @@ aside p {
   font-weight: 100;
 }
 
-main {
+.contact-main {
   position: relative;
 }
 
@@ -85,7 +45,7 @@ form {
   font-size: 1rem;
   background-color: #0D457F;
   width: 60vw;
-  height: 60vh;
+  height: 49vh;
   top: -140px;
   left: 100px;
   z-index: 2;
@@ -95,7 +55,7 @@ form {
   position: absolute;
   background-color: #FDD908;
   width: 59vw;
-  height: 58vh;
+  height: 48vh;
   top: -115px;
   left: 122px;
   z-index: 1;
@@ -107,9 +67,9 @@ form input {
   color: #FFFFFF;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
   color: #FFFFFF;
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 
 .name-email {
@@ -142,15 +102,3 @@ button {
   color: #0D457F;
 }
 
-footer {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  text-align: center;
-  background-color: #FDD908;
-  color: #0D457F;
-  padding: 10px;
-}
-
-footer p {
-  margin: 0;
-}

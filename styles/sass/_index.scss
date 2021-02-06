@@ -1,0 +1,38 @@
+.index-header {
+  background: url(../assets/home-header.jpg);
+  background-size: cover;
+}
+
+.index-header h1 {
+  padding-top: 220px;
+  color: #FDD908;
+  
+}
+
+.index-header img {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 20%;
+}
+
+.index-section {
+  position: relative;
+}
+
+.first-wrapper {
+  display: flex;
+  padding-top: 200px;
+}
+
+.first-wrapper > div > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.first-wrapper > div > div > div i {
+  background-color: #FDD908;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
