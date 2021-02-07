@@ -1,7 +1,15 @@
 header {
   width: 100%;
   height: 600px;
-  color: #FFFFFF;
+  color: $white;
+}
+
+@media (max-width:900px) {
+  header {
+    width: 100%;
+    height: 300px;
+    color: $white;
+  }
 }
 
 .wrapper {
@@ -12,7 +20,7 @@ header {
 .nav-container {
   display: flex;
   list-style: none;
-  font-size: 1rem;
+  font-size: $x-small;
   font-weight: bold;
   margin: 0;
   padding: 50px 0;
@@ -25,9 +33,21 @@ header {
   padding: 10px 0 5px 0;
   margin: 10px;
   text-decoration: none; 
-  color: #FFFFFF; 
+  color: $white; 
 }
 
 .nav-container a:hover {
-  border-bottom: 2px solid #FDD908;
+  border-bottom: 2px solid $yellow;
+}
+
+@media (max-width:600px) {
+  header {
+    width: 100%;
+    height: 200px;
+    color: $white;
+  }
+
+  .nav-container {
+    padding: 10px 0;
+  }
 }

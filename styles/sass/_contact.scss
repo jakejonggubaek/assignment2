@@ -19,11 +19,11 @@
 
 aside {
   padding: 5%;
-  font-size: 1rem;
+  font-size: $x-small;
 }
 
 aside i {
-  color: #0D457F;
+  color:$dark-blue;
   margin: 0 1rem 1rem 0;
 }
 
@@ -38,9 +38,9 @@ aside p {
 
 .input-container {
   position: absolute;
-  font-size: 1rem;
-  background-color: #0D457F;
-  width: 60vw;
+  font-size: $x-small;
+  background-color:$dark-blue;
+  width: 52vw;
   height: 49vh;
   top: -140px;
   left: 100px;
@@ -50,8 +50,8 @@ aside p {
 
 .shadow {
   position: absolute;
-  background-color: #FDD908;
-  width: 59vw;
+  background-color: $yellow;
+  width: 51vw;
   height: 48vh;
   top: -115px;
   left: 122px;
@@ -60,13 +60,13 @@ aside p {
 }
 
 .input-container input {
-  background-color: #0D457F;
+  background-color:$dark-blue;
   border: none;
-  color: #FFFFFF;
+  color: $white;
 }
 
 ::placeholder { 
-  color: #FFFFFF;
+  color: $white;
   opacity: 1; 
 }
 
@@ -81,12 +81,12 @@ aside p {
   width: 40%;
   padding: 20px 20px 20px 20px;
   margin-right: 25px;
-  border-bottom: 2px solid #FDD908;
+  border-bottom: 2px solid $yellow;
 }
 
 .message {
   width: calc(80% + 80px);
-  border: 2px solid #FDD908;
+  border: 2px solid $yellow;
   height: 50%;
   padding: 20px;
 }
@@ -94,9 +94,97 @@ aside p {
 button {
   font-family: 'IM Fell English', serif;
   width: calc(80% + 80px);
-  background: #FDD908;
-  font-size: 1.12rem;
+  background:$yellow;
+  font-size: $small;
   line-height: 2.08rem;
-  color: #0D457F;
+  color: $dark-blue;
 }
 
+@media (max-width:900px) {
+
+  .flex-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+    .input-container {
+    position: static;
+    font-size: $x-small;
+    background-color:$dark-blue;
+    width: 80vw;
+    height: 49vh;
+  }
+
+
+  .shadow {
+    display: none;
+  }
+
+  .flex-container aside {
+    margin-top: 50px;
+    text-align: center;
+    border: 2px dotted $yellow;
+     i {
+       font-size: $large;
+     }
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .flex-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .input-container {
+    position: static;
+    font-size: $x-small;
+    background-color:$dark-blue;
+    width: 95vw;
+    height: 49vh;
+  }
+  
+  .input-container button{
+    width: 70%;
+  }
+
+
+  .shadow {
+    display: none;
+  }
+
+  .flex-container aside {
+    margin-top: 50px;
+
+    text-align: center;
+    border: 2px dotted $yellow;
+     i {
+       font-size: $large;
+     }
+  }
+
+  .message {
+  width: calc(80% + 20px);
+  border: 2px solid $yellow;
+  height: 50%;
+  padding: 20px;
+}
+  ::placeholder { 
+    font-size: 0.75rem;
+    color: $white;
+    opacity: 1; 
+  }
+
+  .name-email input {
+    width: 30%;
+    padding: 0;
+    border-bottom: 2px solid $yellow;
+  }
+
+}

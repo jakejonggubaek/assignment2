@@ -12,7 +12,7 @@
 }
 
 .blog-aside-container {
-  background-color: #0D457F;
+  background-color:$dark-blue;
   padding: 5%;
   width: 90%;
 }
@@ -30,7 +30,7 @@
 }
 
 .blog-aside-container h3 {
-  color: #fdd908;
+  color:$yellow;
   font-size: 1.25rem;
   font-family: 'IM Fell English', serif;
   line-height: 2.9rem;
@@ -40,7 +40,7 @@
 
 .blog-aside-container p,
 .blog-aside-container ul {
-  color: #ffffff;
+  color:$white;
   line-height: 1.4rem;
   margin: 0;
   list-style: none;
@@ -61,18 +61,18 @@
   width: 100%;
   position: relative;
   bottom: 100px;
-  box-shadow: -20px 20px #fdd908;
-  
+  box-shadow: -20px 20px$yellow;
 }
+
 .blog-main {
-  border-left: 2px solid #fdd908;
-  border-bottom: 2px solid #fdd908;
+  border-left: 2px solid $yellow;
+  border-bottom: 2px solid $yellow;
   padding-left: 18px;
 }
 
 article .wrapper h2 {
   margin-top: 0;
-  color: #0D457F;
+  color: $dark-blue;
 }
 
 article .wrapper {
@@ -82,4 +82,172 @@ article .wrapper {
 
 article .wrapper p {
   font-size: 1rem;
+}
+
+.blog-comment {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.blog-comment img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 30px 0 80px;
+}
+
+.blog-section h2 {
+  margin-left: 100px;
+  margin-top: 70px;
+  color: $dark-blue;
+}
+
+.blog-comment p{
+  margin: 0;
+  line-height: 1.4rem;
+}
+
+.blog-comment p span{
+  color: $dark-blue;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.blog-container .blog-contact {
+  position: static;
+  background-color:$light-blue;
+  padding-left: 50px;
+}
+
+.blog-container .blog-contact input{
+  background-color: $light-blue;
+}
+
+.blog-container .blog-contact input::placeholder { 
+  color: $black;
+  opacity: 1; 
+}
+
+.blog-container .blog-contact button {
+  color:$yellow;
+  background-color:$dark-blue;
+  border: none;
+}
+
+@media (max-width: 900px) {
+
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -32.5%;
+    padding-top: 50px;
+  }
+
+  .blog-comment img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 20px 0 0 ;
+  }
+
+  .blog-section h2 {
+    font-size: $small;
+    margin-left: 0;
+    margin-top: 0;
+    color: $dark-blue;
+  }
+
+  .blog-section p {
+    font-size: $x-small;
+  }
+
+  .blog-container .blog-contact {
+    position: static;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .blog-header h1 {
+    padding-top: 20px;
+  }
+
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-container aside{
+    width: 100%;
+  }
+
+  .blog-aside-container img {
+    display: none;
+    position: static;
+    left: auto;
+    bottom: 50px;
+    width: 100%;
+    height: auto;
+    }
+
+  .blog-aside-container {
+    text-align: center;
+    background-color:$dark-blue;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .blog-main {
+    width: 100%;
+  }
+
+  .blog-main img {
+    width: 100%;
+    position: static;
+    bottom: 0px;
+    box-shadow: none;
+  }
+
+  .blog-container main {
+    width: 90%;
+  }
+
+  .blog-main {
+    border: 2px solid $yellow;
+    padding: 18px;
+    text-align: center;
+  }
+
+  .blog-main h2 {
+    padding-top: 20px;
+    font-size: $small;
+  }
+
+  article .wrapper {
+    padding-bottom: 20px;
+  }
+
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: auto;
+    padding-top: 50px;
+  }
+
+  .blog-section img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .blog-comment {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
 }

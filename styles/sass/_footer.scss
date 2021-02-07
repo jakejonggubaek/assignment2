@@ -1,9 +1,9 @@
 footer {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: $x-small;
   text-align: center;
-  background-color: #FDD908;
-  color: #0D457F;
+  background-color: $yellow;
+  color: $dark-blue;
   padding: 10px;
   position: relative;
   bottom: 0;
@@ -13,4 +13,10 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+@media (max-width:600px) {
+  footer {
+    margin-top: 50px;
+  }
 }

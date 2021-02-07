@@ -5,7 +5,7 @@
 
 .index-header h1 {
   padding-top: 220px;
-  color: #FDD908;
+  color: $yellow;
 }
 
 .index-header img {
@@ -26,7 +26,7 @@
 
 .first-wrapper h2 {
   margin: 0;
-  color: #0d457f
+  color: $dark-blue;
 }
 
 .first-wrapper div {
@@ -50,25 +50,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FDD908;
+  background-color: $yellow;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
-  color: #0d457f;
-  font-size: 1.2rem;
+  color: $dark-blue;
+  font-size: $small;
   text-align: center;
 }
 
 .second-wrapper {
   display: flex;
   width: 100%;
-  background-color: #0d457f;
+  background-color: $dark-blue;
   padding: 5% 0;
 }
 
 .second-wrapper h2,
 .second-wrapper p {
-  color: #FFFFFF;
+  color: $white;
 }
 
 .second-wrapper p {
@@ -100,7 +100,7 @@
 
 .new-location-container img {
   position: relative;
-  box-shadow: 20px 20px #FDD908;
+  box-shadow: 20px 20px $yellow;
   left: 0;
   top: -15%;
 }
@@ -111,7 +111,7 @@
 
 .our-program-container img {
   position: relative;
-  box-shadow: -20px 20px #FDD908;
+  box-shadow: -20px 20px $yellow;
   right: 0;
   top: 15%;
   align-self: flex-end;
@@ -122,7 +122,7 @@
 }
 
 .third-section h2 {
-  color: #0d457f;
+  color: $dark-blue;
 }
 
 .third-section > div {
@@ -130,7 +130,7 @@
 }
 
 .third-section button {
-  width: 180px;
+  width: 200px;
 }
 
 .third-section img {
@@ -143,13 +143,13 @@
 }
 
 .fourth-section h2 {
-  color: #0d457f;
+  color: $dark-blue;
 }
 
 .fourth-section .wrapper img {
   width: 25%;
   height: 25%;
-  box-shadow: -20px 20px #FDD908;
+  box-shadow: -20px 20px $yellow;
   object-fit: cover;
 }
 
@@ -158,11 +158,11 @@
 }
 
 .fourth-section button {
-  width: 180px;
+  width: 200px;
 }
 
 .gallery {
-  background-color: #0d457f;
+  background-color: $dark-blue;
   padding: 50px 0;
 }
 
@@ -175,3 +175,4 @@
   padding: 10px;
   width: calc(100% / 3 - 20px);
 }
+
