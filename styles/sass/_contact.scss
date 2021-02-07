@@ -36,7 +36,7 @@ aside p {
   position: relative;
 }
 
-form {
+.input-container {
   position: absolute;
   font-size: 1rem;
   background-color: #0D457F;
@@ -45,6 +45,7 @@ form {
   top: -140px;
   left: 100px;
   z-index: 2;
+  max-width: 800px;  
 }
 
 .shadow {
@@ -55,9 +56,10 @@ form {
   top: -115px;
   left: 122px;
   z-index: 1;
+  max-width: 800px;
 }
 
-form input {
+.input-container input {
   background-color: #0D457F;
   border: none;
   color: #FFFFFF;

@@ -1,0 +1,85 @@
+.blog-header {
+  background: url(../assets/blog-header.jpg);
+  background-size: cover;
+}
+
+.blog-container {
+  display: flex;
+}
+
+.blog-container aside {
+  width: 40%;
+}
+
+.blog-aside-container {
+  background-color: #0D457F;
+  padding: 5%;
+  width: 90%;
+}
+
+.blog-aside-container img {
+  position: relative;
+  left: -30%;
+  bottom: 50px;
+  width: 125%;
+  height: auto;
+}
+
+.blog-container main {
+  width: 60%;
+}
+
+.blog-aside-container h3 {
+  color: #fdd908;
+  font-size: 1.25rem;
+  font-family: 'IM Fell English', serif;
+  line-height: 2.9rem;
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+
+.blog-aside-container p,
+.blog-aside-container ul {
+  color: #ffffff;
+  line-height: 1.4rem;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.blog-aside-container div:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.blog-aside-container ul li:before
+  { content:"• "; font-size:10pt; 
+  padding-right: 10px;
+  
+}
+
+.blog-main img {
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+  box-shadow: -20px 20px #fdd908;
+  
+}
+.blog-main {
+  border-left: 2px solid #fdd908;
+  border-bottom: 2px solid #fdd908;
+  padding-left: 18px;
+}
+
+article .wrapper h2 {
+  margin-top: 0;
+  color: #0D457F;
+}
+
+article .wrapper {
+  padding-top: -20px;
+  padding-bottom: 75px;
+}
+
+article .wrapper p {
+  font-size: 1rem;
+}
