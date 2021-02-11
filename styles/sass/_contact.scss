@@ -1,4 +1,4 @@
-
+//contact page header styles
 .contact-header {
   background: url(../assets/contact-header.jpg);
   background-size: cover;
@@ -17,21 +17,23 @@
 
 }
 
+//contact page side info styles
 aside {
   padding: 5%;
   font-size: $x-small;
+
+  i {
+    color:$dark-blue;
+    margin: 0 1rem 1rem 0;
+  }
+
+  p {
+    margin: 0.3rem 0;
+    font-weight: 100;
+  }
 }
 
-aside i {
-  color:$dark-blue;
-  margin: 0 1rem 1rem 0;
-}
-
-aside p {
-  margin: 0.3rem 0;
-  font-weight: 100;
-}
-
+//contact page form styles
 .contact-main {
   position: relative;
 }
@@ -45,7 +47,13 @@ aside p {
   top: -140px;
   left: 100px;
   z-index: 2;
-  max-width: 800px;  
+  max-width: 800px; 
+  
+  input {
+    background-color:$dark-blue;
+    border: none;
+    color: $white;
+  }
 }
 
 .shadow {
@@ -59,12 +67,6 @@ aside p {
   max-width: 800px;
 }
 
-.input-container input {
-  background-color:$dark-blue;
-  border: none;
-  color: $white;
-}
-
 ::placeholder { 
   color: $white;
   opacity: 1; 
@@ -75,13 +77,13 @@ aside p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.name-email input {
-  width: 40%;
-  padding: 20px 20px 20px 20px;
-  margin-right: 25px;
-  border-bottom: 2px solid $yellow;
+  input {
+    width: 40%;
+    padding: 20px 20px 20px 20px;
+    margin-right: 25px;
+    border-bottom: 2px solid $yellow;
+  }
 }
 
 .message {
@@ -98,18 +100,33 @@ button {
   font-size: $small;
   line-height: 2.08rem;
   color: $dark-blue;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 @media (max-width:900px) {
+//tablet size
 
   .flex-container {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+
+    aside {
+      margin-top: 50px;
+      text-align: center;
+      border: 2px dotted $yellow;
+      i {
+        font-size: $large;
+      }
+    }
   }
 
-    .input-container {
+  .input-container {
     position: static;
     font-size: $x-small;
     background-color:$dark-blue;
@@ -117,23 +134,13 @@ button {
     height: 49vh;
   }
 
-
   .shadow {
     display: none;
   }
-
-  .flex-container aside {
-    margin-top: 50px;
-    text-align: center;
-    border: 2px dotted $yellow;
-     i {
-       font-size: $large;
-     }
-  }
-
 }
 
 @media (max-width:600px) {
+//mobile size
 
   .flex-container {
     flex-direction: column-reverse;
@@ -148,12 +155,11 @@ button {
     background-color:$dark-blue;
     width: 95vw;
     height: 49vh;
+      
+    button{
+      width: 70%;
+    }
   }
-  
-  .input-container button{
-    width: 70%;
-  }
-
 
   .shadow {
     display: none;
@@ -161,7 +167,6 @@ button {
 
   .flex-container aside {
     margin-top: 50px;
-
     text-align: center;
     border: 2px dotted $yellow;
      i {
@@ -174,7 +179,8 @@ button {
   border: 2px solid $yellow;
   height: 50%;
   padding: 20px;
-}
+  }
+
   ::placeholder { 
     font-size: 0.75rem;
     color: $white;
@@ -186,5 +192,4 @@ button {
     padding: 0;
     border-bottom: 2px solid $yellow;
   }
-
 }
