@@ -141,6 +141,9 @@ button:hover {
 
 @media (max-width:600px) {
 //mobile size
+  h1 {
+    margin-top: 50px;
+  }
 
   .flex-container {
     flex-direction: column-reverse;

@@ -9,6 +9,14 @@ header {
     margin: 0 auto;
 }
 
+nav i {
+  position: absolute;
+  left: 5%;
+  font-size: 2rem;
+  visibility: hidden;
+}
+
+
 .nav-container {
   display: flex;
   list-style: none;
@@ -16,6 +24,13 @@ header {
   font-weight: bold;
   margin: 0;
   padding: 50px 0;
+
+  i {
+    position: absolute;
+    left: 5%;
+    font-size: 2rem;
+    display: none;
+  }
 
   li {
     margin: 5px;
